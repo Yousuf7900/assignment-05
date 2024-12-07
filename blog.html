@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="text-black min-h-screen font_lexend bg-white">
+    <div class="bg-[#F9F7F3] w-full">
+        <nav class="bg-[#F9F7F3] flex justify-between w-full top-5 z-50 items-center max-w-screen-2xl py-5 mx-auto">
+            <a href="index.html" class="relative w-[120px] h-12">
+                <button class="bg-lime-400 border-lime-400 border-2 hover:scale-95 duration-300 absolute px-5 rounded-xl text-zinc-800 font-bold py-2 text-xl">Home</button>
+            </a>
+            <div class="flex items-center gap-5">
+                <img src="./assets/logo.png" alt="logo" class="md:w-[2vw] w-5">
+                <h1 class="md:text-[1.5vw] font_lexend font-bold text-black">Bangladesh 2.0</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="./assets/coin.png" alt="coin" >
+                <h1 class="text-black"><span id="total-account">5500</span> BDT</h1>
+            </div>
+        </nav>
+        <div class="w-full bg-white flex justify-center pb-10">
+            <div class="w-[80%] h-[1px] mt-10 border-t-[2px] border-zinc-500"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="max-w-screen-2xl mx-auto h-[80.5vh] space-y-5">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is Document Object Model DOM?</div>
+            <div class="collapse-content">
+              <p>The DOM represents a web page as a logical tree of nodes and objects, allowing programs to change the page's structure, style, and content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How Document Object Model works?</div>
+            <div class="collapse-content">
+              <p>The DOM connects web pages to programming languages, such as JavaScript, by representing the document in memory. Programmers can use the DOM to: 
+                Read, manipulate, and modify XML documents 
+                Access, change, delete, or add anything found in an HTML or XML document 
+                Attach event handlers to nodes so they get executed when an event is triggered</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Who standardizes it?</div>
+            <div class="collapse-content">
+              <p>The World Wide Consortium (W3C) standardizes the DOM in three parts: 
+                Core DOM: The standard model for all document types 
+                HTML DOM: The standard model for HTML documents 
+                XML DOM: The standard model for XML documents</p>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
