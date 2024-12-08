@@ -93,7 +93,7 @@ document.querySelector('#donationBtn').addEventListener('click', function () {
     const historyBtn = document.querySelector('#historyBtn')
     const donationBtn = document.querySelector('#donationBtn')
     historyBtn.style.backgroundColor = '#18181b'
-    historyBtn.style.color = '#a3e635'
+    historyBtn.style.color = '#a3e635' 
     donationBtn.style.backgroundColor = '#a3e635'
     donationBtn.style.color = '#18181b'
 })
