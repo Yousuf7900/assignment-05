@@ -10,12 +10,33 @@ function calculate(price, money, parent) {
         alert('Spread your Hand.')
     }
     else if (number.test(money)) {
-        const temp = parseInt(price.innerText);
-        price.innerText = parseInt(money) + temp;
+
+        // checking the negative value.
+        const numericMoney = parseInt(money);
+        if(numericMoney < 0){
+            alert("Please enter a valid Amount.");
+            return;
+        }
+
         const myAccount = document.querySelector('#total-Account');
-        myAccount.innerText = myAccount.innerText - money;
+        // changing
+        if (parseInt(myAccount.innerText) - numericMoney < 0)
+        {
+            alert("Tomar Kache TK nai. Ammu theke niya asho.");
+            return;
+        }
+
+        const temp = parseInt(price.innerText);
+        price.innerText = numericMoney + temp;
+
+
+        myAccount.innerText = parseInt(myAccount.innerText) - numericMoney;
+
+
         const modal=document.querySelector('#modal')
         modal.classList.remove('hidden')
+
+
         const output = document.querySelector('#output')
         const date = new Date()
 
